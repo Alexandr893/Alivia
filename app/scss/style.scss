@@ -1,0 +1,428 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.header{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+
+    }
+    .menu{
+        &__list{
+            display: flex;
+        }
+        &__list-link{
+            font-family: 'Lato';
+            color:$header-txt;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+        }
+
+        &__list-item{
+            padding-left: 70px;
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__sign{
+        &-link{
+            font-family: 'Lato';
+            
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color:#000000;
+        }
+        &-btn{
+            margin-left: 35px;
+            padding: 13px 50px;
+            border: 1px solid $main-color;
+            border-radius: 4px;
+            background:$main-color;
+            color:$text-color;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            font-family: 'Lato';
+        }
+    }
+    .header__btn-menu{
+        opacity: 0;
+        
+    }
+}
+
+
+.promo{
+    padding-top: 175px;
+    padding-bottom: 400px;
+    background-image: url(../images/BG.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__inner{
+        width: 440px;
+    }
+
+    &__title{
+        color:$main-color;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 74px;
+
+    }
+    &__subtitle{
+        margin-top: 30px;
+        font-family: 'Lato';
+        color:$main-text;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+    &__btn{
+        margin-top: 50px;
+        padding: 20px 50px;
+        font-family: 'Lato';
+        border: 1px solid $main-color;
+        border-radius: 4px;
+        background:$main-color;
+        color:$text-color;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+.workpath{
+    padding-top: 120px;
+    padding-bottom: 51px;
+
+    &__inner{
+        display: flex;
+       
+        
+    }
+  
+    &__title{
+        position: relative;
+        width: 100%;
+        color:$main-color;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        &::before{
+            position: absolute;
+            content:'How it works';
+            left: 0;
+            top:-40px;
+            font-family: 'Lato';
+            color:$main-text;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 157%;
+        }
+    }
+    .subtitle__inner{
+        width: 671px;
+        height: 269px;
+        
+        
+    }
+    &__subtitle{
+     
+       text-align: start;
+        width: 100%;
+        font-family: 'Lato';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color:$main-text;
+    }
+
+    &-step{
+        padding-top: 52px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        grid-gap: 95px;
+        &__item{
+
+        }
+        &__title1{
+            position: relative;
+            padding-bottom: 55px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 150%;
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(../images/01.svg);
+                top:-43px;
+                left:0;
+                width: 145px;
+                height: 84px;
+
+            }
+        }
+        &__title2{
+            position: relative;
+            padding-bottom: 55px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 150%;
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(../images/02.svg);
+                top: -48px;
+                left: -7px;
+                width: 160px;
+                height: 84px;
+
+            }
+        }
+        &__title3{
+            position: relative;
+            padding-bottom: 55px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 150%;
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(../images/03.svg);
+                top: -46px;
+                left: 10px;
+                width: 160px;
+                height: 106px;
+
+            }
+        }
+
+        &__subtitle{
+            font-family: 'Lato';
+            padding-bottom: 60px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+        }
+        &__image1{
+            border-radius: 12px;
+        }
+        // Отступ 2го
+        &__item-pt1{
+            padding-top: 287px;
+        }
+        &__item-pt2{
+            padding-top: 54px;
+        }
+
+
+    }
+
+
+
+}
+
+.review{
+    padding:  177px 229px ;
+    position: relative;
+    background-color: #245852;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        
+    }
+
+    &__info{
+
+    }
+
+    &__info-title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        color: #FFFFFF;
+        margin-bottom: 33px;
+    }
+    &__info-subtitle{
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 157%;
+        color: #FFFFFF;
+        opacity: 0.8;
+        margin-bottom: 57px;
+        
+            }
+    &__info-button{
+        padding: 20px 50px;
+        font-family: 'Lato';
+        border: 1px solid $main-color;
+        border-radius: 4px;
+        background:$main-color;
+        color:$text-color;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+.review__popup-box{
+
+  .review__popup-img{
+    max-width: 100%;
+    width: 895px;
+    border-radius: 12px;
+  
+    z-index: 1;
+
+  }
+  .review__item-popup{
+    
+   
+  }
+  .review__popup-item__play{
+    z-index: 999;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
+.about{
+    padding-top: 120px;
+    padding-bottom: 168px;
+    &__imgbox{
+        position: relative;
+    }
+
+    &__img{
+        width: 638px;
+        max-width: 100%;
+        position: relative;
+    
+    }
+    &__card{
+        position: absolute;
+        bottom: -180px;
+        left: -84px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        width: 296px;
+        height: 293px;
+        border: 1px solid #d0d0d0;
+    
+    
+
+    }
+    &__inner{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    }
+    &__info{
+        padding-left: 87px;
+    }
+
+    &__info-title{
+        padding-top: 20px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        color:$main-color;
+        position: relative;
+        margin-bottom: 20px;
+        &::before{
+            content:'Our product';
+            position: absolute;
+            font-family: 'Lato';
+            color:$main-text;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 157%;
+            left:0;
+            top: -9px;
+
+        }
+    }
+    &__info-subtitle{
+        font-family: 'Lato';
+        color:$main-text;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 31px;
+        margin-bottom: 40px;
+    }
+    &__info-button{
+        padding: 20px 50px;
+        font-family: 'Lato';
+        border: 1px solid $main-color;
+        border-radius: 4px;
+        background:$main-color;
+        color:$text-color;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+
+}
+
+.footer{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #245852;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__inner{
+
+    }
+    &__logo{
+
+    }
+    &__list{
+
+    }
+
+    &__list-item{
+        padding-top: 60px;
+    }
+    &__list-link{
+        font-family: 'Lato';
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+}
+
+
+@import 'media';
